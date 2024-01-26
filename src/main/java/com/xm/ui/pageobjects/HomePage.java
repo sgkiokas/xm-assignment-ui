@@ -28,7 +28,10 @@ public class HomePage extends BasePage {
     public void clickTradingHeader() {
         if (!tradingHeader.isDisplayed()) {
             clickElement(toggleMenuButton);
+
             waitForVisibility(toggleTradingButton);
+            scrollIntoView(toggleTradingButton);
+            
             clickElement(toggleTradingButton);
 
             setCurrentElement(toggleTradingButton);
