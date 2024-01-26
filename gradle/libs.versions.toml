@@ -1,24 +1,15 @@
 [versions]
-org-junit-platform = "1.10.1"
 junit-jupiter = "5.10.1"
 org-seleniumhq = "4.16.1"
 webdrivermanager = "5.6.3"
-guava = "33.0.0-jre"
-google-collections = "1.0"
 assertj-core = "3.25.1"
 lombok = "8.4"
-org-project-lombok = "1.18.28"
 
 [libraries]
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit-jupiter" }
 junit-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit-jupiter" }
-org-junit-platform-junit-platform-suite = { module = "org.junit.platform:junit-platform-suite", version.ref = "org-junit-platform" }
-org-junit-jupiter-junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit-jupiter" }
 org-junit-jupiter-junit-jupiter-params = { module = "org.junit.jupiter:junit-jupiter-params", version.ref = "junit-jupiter" }
 org-assertj-assertj-core = { module = "org.assertj:assertj-core", version.ref = "assertj-core" }
-org-project-lombok = { module = "org.projectlombok:lombok", version.ref = "org-project-lombok" }
-google-guava = { module = "com.google.guava:guava", version.ref = "guava" }
-google-collections = { module = "com.google.collections:google-collections", version.ref = "google-collections" }
 org-seleniumhq-selenium-selenium-java = { module = "org.seleniumhq.selenium:selenium-java", version.ref = "org-seleniumhq" }
 io-github-bonigarcia-webdrivermanager = { module = "io.github.bonigarcia:webdrivermanager", version.ref = "webdrivermanager" }
 
