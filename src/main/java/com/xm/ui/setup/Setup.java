@@ -2,8 +2,10 @@ package com.xm.ui.setup;
 
 import static com.xm.ui.setup.WebDriverFactory.initiateRequestedWebBrowser;
 
-import com.xm.utils.BaseUrls;
+import com.xm.ui.dto.Config;
+import com.xm.ui.utils.ConfigRetrieval;
 import java.time.Duration;
+import java.util.Objects;
 import lombok.Getter;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
@@ -24,8 +26,12 @@ public class Setup {
         webDriverWait = new WebDriverWait(driver, Duration.ofMillis(WAIT_TIME));
     }
 
+    private static Config retrieveConfig() {
+        return Objects.requireNonNull(ConfigRetrieval.retrieve());
+    }
+
     public static void openPage() {
-        driver.get(BaseUrls.XM.getBaseUrl());
+        driver.get(retrieveConfig().getBaseUrl());
     }
 
     public static void setUpDriver() {
