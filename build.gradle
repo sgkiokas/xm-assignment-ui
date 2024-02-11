@@ -57,9 +57,10 @@ repositories {
 }
 
 dependencies {
+    implementation libs.io.github.bonigarcia.webdrivermanager
     implementation libs.org.assertj.assertj.core
     implementation libs.org.seleniumhq.selenium.selenium.java
-    implementation libs.io.github.bonigarcia.webdrivermanager
+    implementation libs.org.snakeyaml
 
     testImplementation libs.junit.jupiter
     testImplementation libs.org.junit.jupiter.junit.jupiter.params
